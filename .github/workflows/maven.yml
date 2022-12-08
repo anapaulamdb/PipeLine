@@ -58,4 +58,4 @@ jobs:
           sudo docker pull yokodero/pipeline:latest
           sudo docker stop backend_server
           sudo docker rm backend_server
-          sudo docker run -p 8080:8080 --name backend_server yokodero/pipeline:latest 
+          sudo docker run -p 80:8080 --name -d backend_server yokodero/pipeline:latest 
