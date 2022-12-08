@@ -54,10 +54,10 @@ jobs:
         key_path: batatafrita.pem
         envs: GITHUB_SHA
         script: |
-          sudo docker login -u yokodero -p 84480066r
+          sudo docker login -u yokodero -p dckr_pat_TB062nZKQmMbJPtGYClnU53ZmFY
           sudo docker pull yokodero/pipeline:latest
           sudo docker stop backend_server
           sudo docker rm backend_server
           sudo docker run -p 80:8080 -d --name backend_server yokodero/pipeline:latest 
-          sudo docker image prune -a
+          sudo docker image prune -a -f
           y
