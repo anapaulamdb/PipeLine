@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM openjdk:11
 
 EXPOSE 8080
 
@@ -7,4 +7,3 @@ RUN apt-get install -y maven
 
 ADD target/pipeline.jar pipeline.jar
 ENTRYPOINT ["java","jar","/pipeline.jar"]
-
