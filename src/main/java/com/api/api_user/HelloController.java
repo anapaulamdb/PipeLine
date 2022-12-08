@@ -12,5 +12,10 @@ public class HelloController {
     {
         return "Olá Mundo VSCode com Spring Boot implementando API REST...";
     }
+    @GetMapping(value = "Testing")
+    public String Testing()
+    {
+        return "A nova função foi implementada";
+    }
     
 }
