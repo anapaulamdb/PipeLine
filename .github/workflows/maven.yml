@@ -55,7 +55,7 @@ jobs:
         envs: GITHUB_SHA
         script: |
           docker login
-          docker pull yokodero/pipeline
+          sudo docker pull yokodero/pipeline
           docker stop backend_server
           docker rm backend_server
           docker run --detach --name 
