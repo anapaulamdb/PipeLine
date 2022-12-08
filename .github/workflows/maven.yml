@@ -25,7 +25,7 @@ jobs:
     - name: Set up JDK 11
       uses: actions/setup-java@v3
       with:
-        java-version: '17'
+        java-version: '11'
         distribution: 'temurin'
         cache: maven
     - name: Build with maven
@@ -54,8 +54,8 @@ jobs:
         key_path: batatafrita.pem
         envs: GITHUB_SHA
         script: |
-          docker login
+          sudo docker login
           sudo docker pull yokodero/pipeline
-          docker stop backend_server
-          docker rm backend_server
-          docker run --detach --name 
+          sudo docker stop backend_server
+          sudo docker rm backend_server
+          sudo docker run --detach --name 
