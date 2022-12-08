@@ -54,8 +54,8 @@ jobs:
         key_path: batatafrita.pem
         envs: GITHUB_SHA
         script: |
-          sudo docker login
-          sudo docker pull yokodero/pipeline
+          sudo docker login -u yokodero -p 84480066r
+          sudo docker pull yokodero/pipeline:latest
           sudo docker stop backend_server
           sudo docker rm backend_server
-          sudo docker run --detach --name 
+          sudo docker run -p 8080:8080 yokodero/pipeline:latest --name backend_server
