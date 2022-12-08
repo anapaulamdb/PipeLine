@@ -37,4 +37,4 @@ jobs:
         registry: docker.io
         dockerfile: Dockerfile
         username: yokodero
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        password: dckr_pat_TB062nZKQmMbJPtGYClnU53ZmFY
