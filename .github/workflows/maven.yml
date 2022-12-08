@@ -35,6 +35,6 @@ jobs:
         image: yokodero/pipeline
         tags: latest
         registry: docker.io
-        dockerfile: DockerFile
+        dockerfile: Dockerfile
         username: yokodero
         password: dckr_pat_TB062nZKQmMbJPtGYClnU53ZmFY
