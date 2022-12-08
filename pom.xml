@@ -68,7 +68,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<packaging>jar</packaging>
 		<finalName>pipeline</finalName>
 	</build>
 
