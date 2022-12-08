@@ -7,3 +7,4 @@ RUN apt-get install -y maven
 
 ADD target/pipeline.jar pipeline.jar
 ENTRYPOINT ["java","jar","/pipeline.jar"]
+
