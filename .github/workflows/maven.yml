@@ -51,7 +51,7 @@ jobs:
       with:
         host: ec2-54-233-200-243.sa-east-1.compute.amazonaws.com
         username: ec2-user
-        key: {{secrets.AWS_CODE}}
+        key_path: batatafrita.pem
         envs: GITHUB_SHA
         script: |
           docker login
