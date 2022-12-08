@@ -28,6 +28,8 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
+    - name: Build with maven
+      run: mvn clean install
 
     - name: Buildar and push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v5
