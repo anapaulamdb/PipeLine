@@ -45,7 +45,6 @@ jobs:
         dockerfile: Dockerfile
         username: yokodero
         password: dckr_pat_TB062nZKQmMbJPtGYClnU53ZmFY
-
     - name: Docker Pull & Run
       uses: appleboy/ssh-action@master
       with:
