@@ -28,6 +28,13 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: mvn clean install
 
+    - name: Buildar and push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: yokodero/pipeline
+        tags: latest
+        registry: docker.io
+        dockerfile: Dockerfile
+        username: ${( secrets.DOCKER_HUB_USERNAME )}
+        password: ${( secrets.DOCKER_HUB_PASSWORD )}
