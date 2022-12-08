@@ -31,13 +31,9 @@ jobs:
     - name: Build with maven
       run: mvn clean install
 
-
     - name: Docker Login
-       env:
-        DOCKER_USER: yokodero
-        DOCKER_PASSWORD: dckr_pat_TB062nZKQmMbJPtGYClnU53ZmFY
       run:
-        docker login $DOCKER_USER -p $DOCKER_PASSWORD
+        docker login -u yokodero -p dckr_pat_TB062nZKQmMbJPtGYClnU53ZmFY
 
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v5
