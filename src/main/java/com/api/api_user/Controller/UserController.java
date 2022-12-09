@@ -22,14 +22,13 @@ import lombok.AllArgsConstructor;
 
 public class UserController {
     UserRepository userRepository;
-    @PostMapping(value = "inserir",consumes={"application.json"})
+    @PostMapping(value = "inserir")
     public User saveUser(@RequestBody User user)
     {
         return userRepository.save(user);
     }
     @GetMapping(value = "listar")
     public List<User> getAllUser()
-    
     {
         return userRepository.findAll();
     }
