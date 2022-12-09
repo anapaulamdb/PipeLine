@@ -25,3 +25,6 @@ public class User {
     String senha;
     String email;
 }
+//create table usuario( id int not null AUTO_INCREMENT, nome varchar(255) NOT NULL DEFAULT '', login varchar(255) NOT NULL DEFAULT '', 
+//senha varchar(255) NOT NULL DEFAULT '', 
+//email varchar(255) NOT NULL DEFAULT '', primary key (id) )
