@@ -29,6 +29,7 @@ public class UserController {
     }
     @GetMapping(value = "listar")
     public List<User> getAllUser()
+    
     {
         return userRepository.findAll();
     }
