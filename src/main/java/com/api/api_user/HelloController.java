@@ -7,10 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/user")
 public class HelloController {
+    String nome = "Usuário";
+
     @GetMapping(value = "Hello")
     public String Hello()
     {
-        return "Olá Mundo VSCode com Spring Boot implementando API REST...";
+        return "Olá " + nome + ", você está alterando uma api através de uma pipeline";
     }
     @GetMapping(value = "Testing")
     public String Testing()
