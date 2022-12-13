@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/user")
 public class HelloController {
-    String nome = "Usuáriob";
+    String nome = "Rodrigo";
 
     @GetMapping(value = "Hello")
     public String Hello()
@@ -19,7 +19,4 @@ public class HelloController {
     {
         return "A nova função foi implementada";
     }
-
-    
-    
 }
